@@ -1,4 +1,4 @@
-# AI - Azure - Machine Learning (ML)
+# AI - Azure - ML Machine Learning
 
 ---
 
@@ -6,15 +6,17 @@
 
 ---
 
-## 👷 Preparando Ambiente para realizar o LAB: 
+# 👷 - Preparando Ambiente para realizar o LAB: 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Criando Recurso Machine Learning, Resource Group, Storages e Workspace)
 
 
-1 - Acesse: <a href="https://portal.azure.com"> <img width="99" alt="Clique Aqui" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/4665d721-98e7-4c24-bc97-f7540d64a917"></a>
+## 1 - Acesse: <a href="https://portal.azure.com"> <img width="99" alt="https://portal.azure.com" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/4665d721-98e7-4c24-bc97-f7540d64a917"></a>
 
-2 - Faça o Login com a sua Conta 🔐
 
-3 - Crie um Resource (Recurso)
+
+## 2 - Faça o Login com a sua Conta 🔐
+  
+## 3 - Crie e Configure um Resource (Recurso)
 
 3.1 - Na "Home", Clique em "Create Resource"
 <br><br>
@@ -83,12 +85,12 @@ caso contrário escolha na lista; <br>
 <br>
 
 ---
-## 🔬 Realizando o LAB - AI - Azure - Machine Learning: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Após Preparação do Ambiente ter sido Finalizado com Sucesso. Vamos inicia o LAB)
+# 🔬 Realizando o LAB - AI - Azure - Machine Learning: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Após Preparação do Ambiente ter sido Finalizado com Sucesso. Vamos inicia o LAB)
 
 <br>
 
-1 - Acessar o Azure - Machine Learning Studio
+## 1 - Acessar o Azure - Machine Learning Studio
 
 1.1 - Na "Home" do Azure, escolha o "Workspace" que você criou na etapa de "Preparação de Ambiente"
 <br><br>
@@ -101,22 +103,22 @@ caso contrário escolha na lista; <br>
 <img width="549" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/85553f83-b86e-4a03-8853-4989f93d388a">
 
 
-2 - No "Machine Learning Studio" - Criar um "Automated ML" <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+## 2 - No "Machine Learning Studio" - Criar um "Automated ML" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 (Job de Machine Learning, para processar Modelos com base em arquivo de Dados) 
 <br>
 
-2.1 - Acessar o menu "Automated ML"
-<br><br>
+### 2.1 - Acessar o menu "Automated ML"
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="549" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/25cd4363-5329-40e5-b9ad-c10352bf5fee">
 
-2.2 - Clicar em "+ New Automated ML Job" 
-<br><br>
+### 2.2 - Clicar em "+ New Automated ML Job" 
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="354" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/03958a62-7cce-42eb-b0b0-7c37d3e96b41">
 
-2.3 - Configurar o Automated ML Job <br>
+### 2.3 - Configurar o Automated ML Job <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 2.3.1 - "Basic Settings" - Preencher os campos: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -156,7 +158,7 @@ caso contrário escolha na lista; <br>
 <img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/4d393d0d-2077-4ddd-950f-1b0de484cf5f">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-2.3.2.8 - "Create data asset" - "Web URL" - Campo: "Web URL": ```https://aka.ms/bike-rentals``` (Os dados que utilizaremos está publicado na WEB) <br>
+2.3.2.8 - "Create data asset" - "Web URL" - Campo: "Web URL": ```https://aka.ms/bike-rentals``` (dados Microsoft) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 2.3.2.9 - "Create data asset" - "Web URL" - Opção: "Skip data validation": ```Desligado``` (para não pular a validação de dados) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -166,17 +168,17 @@ caso contrário escolha na lista; <br>
 <img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/2a505481-7de9-405b-9a93-e4fd9581cffb">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-2.3.2.11 - "Create data asset" - "Settings" - Campo: "File Format": ```Delimited``` (dados que vamos utilizar são CSV, delimitados por "," ) <br>
+2.3.2.11 - "Create data asset" - "Settings" - Campo: "File Format": ```Delimited``` (dados no formato CSV, delimitados por "," ) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 2.3.2.12 - "Create data asset" - "Settings" - Opção: "Delimiter": ```Comma``` (Delimitador é vírgula (comma)) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 2.3.2.13 - "Create data asset" - "Settings" - Opção: "Encoding": ```UTF-8```  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-2.3.2.14 - "Create data asset" - "Settings" - Opção: "Column headers": ```Only First file has headers``` (cabeçalho de dados na 1a linha) <br>
+2.3.2.14 - "Create data asset" - "Settings" - Opção: "Column headers": ```Only First file has headers``` (cabeçalho na 1a linha) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 2.3.2.15 - "Create data asset" - "Settings" - Opção: "Skip rows": ```None``` (não pular linhas) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-2.3.2.16 - "Create data asset" - "Settings" - Opção: "Dataset contains multi-line data": ```desmarcado``` (não teremos dado com várias linhas) <br>
+2.3.2.16 - "Create data asset" - "Settings" - Opção: "Dataset contains multi-line data": ```desmarcado``` (dados não tem várias linhas) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 2.3.2.17 - "Create data asset" - "Settings" - Clicar no botão ```Next``` <br>
 <br>
@@ -200,5 +202,181 @@ caso contrário escolha na lista; <br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/c71674e2-9629-4557-b796-756e6da49951">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.3 - "Task type & Data" - Escolher o data que acabamos de criar: ```bike-rentals``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.4 - "Task type & Data" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/189ee58c-0961-4224-a3bb-f57f294d23bb">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5 - "Task Settings" - Preencher os campos: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.1 - "Task Settings" - campo: "Target Column" - ```rentals (integer)``` (escolher esta opção.) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.2 - "Task Settings" - clicar no link: ```View Aditional configuration settings``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.3 - "Task Settings" - "View Aditional configuration settings" - Preencher Conforme print abaixo <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/7a92f96d-2856-454e-8736-02f67bf472d0">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.4 - "Task Settings" - "Limits" - Preencher Conforme print abaixo <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.5 - "Task Settings" - "Limits" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/73652151-96a0-4573-91ca-afe952b6c6b5">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.6 - "Task Settings" - "Validate Tests" - Preencher Conforme print abaixo <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.7 - "Task Settings" - "Validate Tests" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/0fa03451-81f3-4add-99e4-69cb705cf01f">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.8 - "Task Settings" - "Compute" - Preencher Conforme print abaixo <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.9 - "Task Settings" - "Compute" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/d8916513-b80a-4600-8975-0eddc6799eef">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.10 - "Task Settings" - "Review" - Revisar os dados digitados/escolhidos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.5.11 - "Task Settings" - "Review" - Clicar no botão ```Submit Trainning Job``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/fe8687d2-a5ef-4b67-85d4-074bd4136ea6">
+
+### 2.4 - Execução do Automated ML Job <br>
+
+Com o click do botão ```Submit Trainning Job``` (passo anterior), o Job que criamos para o Treinamento dos Modelos escolhidos e dos Dados que configuramos começa a ser executado. Abaixo os prints dos momentos:
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.4.1 - JOB - Em Execução <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/28045cdc-7ded-426b-96a0-2e0cada83358">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.4.2 - JOB - Execução Finalizada<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/a18a6d91-33a1-4fee-90f0-aa53651b1807">
+
+### 2.5 - Resultados da Execução do Automated ML Job <br>
+
+Ao finalizar com sucesso o processamento do JOB ele apresenta os Resultados do Treinamento indicando qual Modelo apresentou melhor resultado
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.5.1 - No Resumo da Finalização de Execução do Job: Na Seção "Best Model Summary" - Clicar no link ```Algorithm Name```<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/24a67fc7-3d03-4b72-bad1-0ef32125b072">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.5.2 - Na página do Algoritmo escolhido, Clicar na Guia ```Metrics``` para verificar os números e gráficos: `predict-true` e `residuals`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/53419f50-b826-4453-95fb-bbd0cf380bd5">
+
+
+### 2.6 - Deploy do MODEL <br>
+
+Iremos gerar um Deploy do Modelo (Best Model / Algorithm), para que possamos passar os parametros via JSON e recebermos o Retorno do Model.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.1 - Na página do Algoritmo escolhido, Clicar na Guia ```Model```<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.2 - Escolher a Opção ```Deploy``` >  ```Web Service``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/f71a8b6c-e9c2-4bad-baf4-867f421203d3">
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.3 - Em "Deploy a model", Preencher os campos: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.3.1 - "Deploy a model" - campo: "Name" = ```predict-rentals``` (Nome do Web Service que vai expor o Model" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.3.2 - "Deploy a model" - campo: "Compute Type": escolher ```Azure Container Instance``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.3.3 - "Deploy a model" - Clicar no botão ```Deploy``` <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/52318f9f-5ceb-43a6-ba5b-d32d33a9361b">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.4 - Deploy "Em Execução", print abaixo: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="505" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/9424851b-b4e2-4727-b24c-23cd87a26e3a">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.6.5 - Deploy "Finalizado com Sucesso", print abaixo: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="477" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/c5511f90-4455-477f-8c82-e6c04f4a2369">
+
+### 2.7 - Testando o MODEL <br>
+
+Iremos realizar testes no Model, através do **Web Service** que foi gerado com base no Model e Deployado.
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.7.1 - Na Menu Lateral Esquerdo: Selecionar ```Endpoints``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.7.1 - Na página "Endpoints": Selecionar o endpoint que criamos/deployamos ```predict-rentals``` <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="650" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/473fb943-2f5d-44b8-9236-cee0c3d19750">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.7.2 - Na página do Endpoint "predict-rentals": clicar na guia ```Test``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.7.3 - Colar o JSON abaixo em ```Input Data to test endpoint``` <br>
+
+```
+ {
+   "Inputs": { 
+     "data": [
+       {
+         "day": 1,
+         "mnth": 1,   
+         "year": 2022,
+         "season": 2,
+         "holiday": 0,
+         "weekday": 1,
+         "workingday": 1,
+         "weathersit": 2, 
+         "temp": 0.3, 
+         "atemp": 0.3,
+         "hum": 0.3,
+         "windspeed": 0.3 
+       }
+     ]    
+   },   
+   "GlobalParameters": 1.0
+ }
+
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.7.4 - Clicar no botão ```Test``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.7.5 - Visualizar o Resultado devolvido pelo endpoint/Model em ```Test Result``` <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="643" alt="image" src="https://github.com/mstrulenque/AI-Azure-ML-Machine-Learning_LAB/assets/63933792/7672a010-862d-4c1e-98f0-26812fec6475">
+
+
+
+
+
+
+
 
 
