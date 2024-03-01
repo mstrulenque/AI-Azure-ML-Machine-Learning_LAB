@@ -4,6 +4,32 @@
 
 **LAB Utilizando**: Microsoft **Azure AI | Machine Learming Studio**
 
+**Descrição do LAB**: 
+
+Treinamento de Machine Learning, simulando um Use Case de "Aluguel de Bike", através da: 
+ - Criação de um JOB (Automated ML),
+ - Utilizando Modelo/Algoritmo de Regressão,
+ - Uma fonte de dados na WEB, disponibilizado pela Microsoft, com dados históricos de aluguel de bike.
+     
+**Ações que serão realizadas**:
+
+ - Azure:
+   - Provisionar o Resource `Azure Machine Learning`
+   - Criar um Resource Group
+   - Criar um Workspace
+ - Machine Learning Studio
+   - Criar um `Automated ML`    (Job para Treinamento de Model)
+   - Configurar um `Data Asset` (Dados históricos de Aluguel de bikes que será usado no Treinamento)
+   - Associar o Data Asset a uma fonte de Dados na Web
+   - Configurar o `Data Source`  (Fonte de Dados)
+   - Configurar os parametros do Model/Algorithm - Regression
+   - Configurar parametros de execução do JOB
+   - Configurar o `Compute`       (Tipo Serverless, Virtual Machine e instancias que será usada para executar JOB)
+   - Execução do JOB
+   - Visualização dos Resultados do Treinamento
+   - Deploy de um Web Service com o Model/Algorithm identificado como melhor no treinamento
+   - Realizar Testes via Web Service verificando o Resultado.
+
 ---
 
 # 👷 - Preparando Ambiente para realizar o LAB: 
@@ -11,7 +37,6 @@
 
 
 ## 1 - Acesse: <a href="https://portal.azure.com"> <img width="99" alt="https://portal.azure.com" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/4665d721-98e7-4c24-bc97-f7540d64a917"></a>
-
 
 
 ## 2 - Faça o Login com a sua Conta 🔐
