@@ -16,12 +16,12 @@
 
 3 - Crie um Resource (Recurso)
 
-3.1 - Clique em "Create Resource"
+3.1 - Na "Home", Clique em "Create Resource"
 <br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="62" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/b1b852ed-04a8-4eee-ba31-8f2845a546e7">
 
-3.2 - No campo de busca digite "machine learning" e no resultado obtido, escolha "Azure Machine Learning" 
+3.2 - No campo de busca digite ```machine learning``` e no resultado obtido, escolha "Azure Machine Learning" 
 <br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img width="275" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/c483358e-ec0c-45cf-a654-517850383b81">
@@ -83,3 +83,122 @@ caso contrário escolha na lista; <br>
 <br>
 
 ---
+## 🔬 Realizando o LAB - AI - Azure - Machine Learning: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Após Preparação do Ambiente ter sido Finalizado com Sucesso. Vamos inicia o LAB)
+
+<br>
+
+1 - Acessar o Azure - Machine Learning Studio
+
+1.1 - Na "Home" do Azure, escolha o "Workspace" que você criou na etapa de "Preparação de Ambiente"
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="549" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/43b68a4b-0d50-4df1-aeb8-27367c1d63b3">
+
+1.2 - Na página do Workspace escolhido, clicar no botão ```Launch Studio``` 
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="549" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/85553f83-b86e-4a03-8853-4989f93d388a">
+
+
+2 - No "Machine Learning Studio" - Criar um "Automated ML" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(Job de Machine Learning, para processar Modelos com base em arquivo de Dados) 
+<br>
+
+2.1 - Acessar o menu "Automated ML"
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="549" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/25cd4363-5329-40e5-b9ad-c10352bf5fee">
+
+2.2 - Clicar em "+ New Automated ML Job" 
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="354" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/03958a62-7cce-42eb-b0b0-7c37d3e96b41">
+
+2.3 - Configurar o Automated ML Job <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.1 - "Basic Settings" - Preencher os campos: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.1.1 - "Job Name" - ``` job-bike-rental ``` (colocar um nome sugestivo relacionado a atividade que esta executando) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.1.2 - "New experiment name" - ``` mslearn-bike-rental ``` (colocar nome sugestivo relacionado a experimentação) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.1.3 - "Description" - (colocar a descrição da experimentação que esta executando) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.1.4 - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="543" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/111837cf-1acf-411e-9277-3affa9dbd479">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2 - "Task type & Data" - Preencher os campos: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.1 - "Task type" - ``` Regression ``` (escolher esta opção.) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.2 - "Select Data" - Clicar no botão "Create" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.3 - "Create data asset" - "Data Type" - campo: "Name" = ```bike-rentals``` (Nome da Base de Dados) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.4 - "Create data asset" - "Data Type" - campo: "Type" = ```Tabular``` (pois nossos dados sao CSV (tabulados)) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.5 - "Create data asset" - "Data Type" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="557" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/aec67fb5-c3a6-4630-a3df-fd885ea12265">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.6 - "Create data asset" - "Data Source" - Escolher: ```From Web Files``` (Os dados que utilizaremos está publicado na WEB) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.7 - "Create data asset" - "Data Source" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/4d393d0d-2077-4ddd-950f-1b0de484cf5f">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.8 - "Create data asset" - "Web URL" - Campo: "Web URL": ```https://aka.ms/bike-rentals``` (Os dados que utilizaremos está publicado na WEB) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.9 - "Create data asset" - "Web URL" - Opção: "Skip data validation": ```Desligado``` (para não pular a validação de dados) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.10 - "Create data asset" - "Web URL" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/2a505481-7de9-405b-9a93-e4fd9581cffb">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.11 - "Create data asset" - "Settings" - Campo: "File Format": ```Delimited``` (dados que vamos utilizar são CSV, delimitados por "," ) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.12 - "Create data asset" - "Settings" - Opção: "Delimiter": ```Comma``` (Delimitador é vírgula (comma)) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.13 - "Create data asset" - "Settings" - Opção: "Encoding": ```UTF-8```  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.14 - "Create data asset" - "Settings" - Opção: "Column headers": ```Only First file has headers``` (cabeçalho de dados na 1a linha) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.15 - "Create data asset" - "Settings" - Opção: "Skip rows": ```None``` (não pular linhas) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.16 - "Create data asset" - "Settings" - Opção: "Dataset contains multi-line data": ```desmarcado``` (não teremos dado com várias linhas) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.17 - "Create data asset" - "Settings" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/e833d58a-8cad-41a2-82d9-dd84ae402eb8">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.18 - "Create data asset" - "Schema" - Column Name: "Path": ```Desabilitar``` (Não será usado) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.19 - "Create data asset" - "Schema" - Column Name: "Todas as outras": ```Habilitadas``` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.20 - "Create data asset" - "Schema" - Clicar no botão ```Next``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/1a7b05a1-1661-4b24-8b82-97855a8dbfa6">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.21 - "Create data asset" - "Review" - Revisar os dados preenchidos nas páginas anteriores <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3.2.22 - "Create data asset" - "Review" - Clicar no botão ```Create``` <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="553" alt="image" src="https://github.com/mstrulenque/dio-lab-azure-ML/assets/63933792/c71674e2-9629-4557-b796-756e6da49951">
+
+
